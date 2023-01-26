@@ -1,6 +1,6 @@
 # Example auth server
 
-Describes and deploys Cognito User Pool with scopes for 
+Describes and deploys Cognito User Pool with scopes for [Example Fargate Micro Service](https://github.com/amalinovskiy/fargate-microservice-example) 
 
 ## Directory structure
 
@@ -24,8 +24,13 @@ TypeScript code into [CloudFormation](https://aws.amazon.com/cloudformation/)) d
 
 ## Bootstrap CDK 
 
-CDK infrastructure needs to be bootstrapped once per account, it creates a dedicated CloudFormation stack with all required resources
+CDK infrastructure needs to be bootstrapped once per account, it creates a dedicated CloudFormation stack with all required resources.
 
+To bootstrap the insfrastructure run:
+
+```
+cdk bootstrap aws://ACCOUNT-NUMBER/REGION
+```
 
 ## Deploying Infrastructure
 Run 
